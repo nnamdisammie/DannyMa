@@ -63,8 +63,8 @@ SQL challenge
 
 ## Problem 1
 
-term
-: 1. What is the total amount each customer spent at the restaurant?
+1. What is the total amount each customer spent at the restaurant?
+## Solution
 
     SELECT sales.customer_id, SUM(menu.price) AS total_amount
     FROM dannys_diner.menu menu
