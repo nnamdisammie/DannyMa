@@ -1,5 +1,5 @@
 # DannyMa SQL Challenge
-![](‪C:\Users\USER\Downloads\dannyma.png)
+
 ![](https://8weeksqlchallenge.com/images/case-study-designs/1.png)
 ## Introduction
 
