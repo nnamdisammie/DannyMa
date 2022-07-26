@@ -53,7 +53,7 @@ SQL challenge
       "customer_id" VARCHAR(1),
       "join_date" DATE
     );
-```sql   
+   
     INSERT INTO members
       ("customer_id", "join_date")
     VALUES
