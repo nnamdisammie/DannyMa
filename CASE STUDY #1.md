@@ -141,7 +141,7 @@ SQL challenge
 ```sql
     WITH first_CTE AS 
     (
-      SELECT sales.customer_id, menu.product_name, DENSE_RANK() OVER 		(PARTITION BY sales.customer_id ORDER BY COUNT(sales.customer_id) DESC) AS rank 
+      SELECT sales.customer_id, menu.product_name, DENSE_RANK() OVER (PARTITION BY sales.customer_id ORDER BY COUNT(sales.customer_id) DESC) AS rank 
     FROM dannys_diner.menu menu
     JOIN dannys_diner.sales sales
     ON menu.product_id = sales.product_id
@@ -236,7 +236,7 @@ SQL challenge
 ## Solution
 ```sql
     SELECT sales.customer_id, 
-    	SUM(CASE WHEN menu.product_name = 'sushi' THEN 20 * 	            menu.price ELSE 10 * menu.price END) AS total_points
+    SUM(CASE WHEN menu.product_name = 'sushi' THEN 20 * menu.price ELSE 10 * menu.price END) AS total_points
     FROM dannys_diner.sales sales
     JOIN dannys_diner.menu menu
     ON sales.product_id = menu.product_id
@@ -256,7 +256,7 @@ SQL challenge
     SELECT sales.customer_id,
     sales.order_date, members.join_date,  menu.product_name, menu.price,
     SUM(CASE WHEN menu.product_name = 'sushi' THEN 20 * menu.price 
-        WHEN sales.order_date BETWEEN  members.join_date AND 		  	  members.join_date + INTERVAL '6 days' THEN 2 * 10 * 			menu.price ELSE 10 * menu.price END) AS total_points
+        WHEN sales.order_date BETWEEN  members.join_date AND members.join_date + INTERVAL '6 days' THEN 2 * 10 * menu.price ELSE 10 * menu.price END) AS total_points
                      
     FROM dannys_diner.sales sales
     JOIN dannys_diner.menu menu
