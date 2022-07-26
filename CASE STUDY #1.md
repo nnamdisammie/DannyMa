@@ -1,5 +1,5 @@
 # DannyMa SQL Challenge
-
+<img src="https://8weeksqlchallenge.com/images/case-study-designs/1.png" width="50" height="50">
 ![](https://8weeksqlchallenge.com/images/case-study-designs/1.png)
 ## Introduction
 
