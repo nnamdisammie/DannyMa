@@ -34,7 +34,7 @@ SQL challenge
       ('C', '2021-01-01', '3'),
       ('C', '2021-01-01', '3'),
       ('C', '2021-01-07', '3');
-    ``` 
+   ``` 
     
     CREATE TABLE menu (
       "product_id" INTEGER,
