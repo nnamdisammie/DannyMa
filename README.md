@@ -1,4 +1,4 @@
 # DannyMa
 SQL challenge
 
-![](dannyma.png)
+![alt text](https://8weeksqlchallenge.com/images/case-study-designs/1.png)
