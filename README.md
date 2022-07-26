@@ -61,7 +61,10 @@ SQL challenge
       ('B', '2021-01-09');
  ```
 
-**Query #1**
+## Problem 1
+
+term
+: 1. What is the total amount each customer spent at the restaurant?
 
     SELECT sales.customer_id, SUM(menu.price) AS total_amount
     FROM dannys_diner.menu menu
