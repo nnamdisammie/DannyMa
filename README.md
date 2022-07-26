@@ -1,4 +1,4 @@
 # DannyMa
 SQL challenge
 
-![](https://camo.githubusercontent.com/19879e603b5f092c257cca66960224e5625536253bf73dfcc6e5abd17a41a974/68747470733a2f2f387765656b73716c6368616c6c656e67652e636f6d2f696d616765732f636173652d73747564792d64657369676e732f312e706e67.png)
+![](https://8weeksqlchallenge.com/images/case-study-designs/1.png)
