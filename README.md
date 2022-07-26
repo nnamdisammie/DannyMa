@@ -63,30 +63,32 @@ SQL challenge
 
 ## Problem 1
 
-1. What is the total amount each customer spent at the restaurant?
+    What is the total amount each customer spent at the restaurant?
 ## Solution
-
+```sql
     SELECT sales.customer_id, SUM(menu.price) AS total_amount
     FROM dannys_diner.menu menu
     JOIN dannys_diner.sales sales
     ON menu.product_id = sales.product_id
     GROUP BY 1
     ORDER BY 1;
-
+```
 | customer_id | total_amount |
 | ----------- | ------------ |
 | A           | 76           |
 | B           | 74           |
 | C           | 36           |
 
----
-**Query #2**
 
+## Problem 2
+    How many days has each customer visited the restaurant?
+## Solution
+```sql    
     SELECT customer_id, COUNT( DISTINCT order_date)
     FROM dannys_diner.sales
     GROUP BY 1
     ORDER BY 1;
-
+```
 | customer_id | count |
 | ----------- | ----- |
 | A           | 4     |
