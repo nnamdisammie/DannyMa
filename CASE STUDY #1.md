@@ -204,7 +204,8 @@ Danny has shared with you 3 key datasets for this case study:
 ```sql
     WITH third_cte AS 
     (
-     SELECT sales.customer_id, sales.product_id,
+     SELECT sales.customer_id,
+     sales.product_id,
      sales.order_date,
      DENSE_RANK() OVER (PARTITION BY sales.customer_id ORDER BY sales.order_date DESC) AS time_rank 
      FROM dannys_diner.sales AS sales
@@ -213,7 +214,9 @@ Danny has shared with you 3 key datasets for this case study:
      WHERE sales.order_date < members.join_date
     )
     
-    SELECT customer_id, product_name, order_date 
+    SELECT customer_id,
+    product_name,
+    order_date 
     FROM third_cte sales
     JOIN dannys_diner.menu menu
     ON sales.product_id = menu.product_id
